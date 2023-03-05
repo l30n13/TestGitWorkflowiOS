@@ -1,10 +1,7 @@
 name: Currenncy Converter iOS Application
 
-on:
-  push:
-    branches:
-      - dev
-
+on: [push]
+  
 jobs:
   build:
     runs-on: macos-latest
