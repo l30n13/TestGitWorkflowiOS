@@ -13,10 +13,18 @@ jobs:
       matrix:
         destination: ['platform=iOS Simulator,OS=16.3.1,name=iPhone 14 Pro Max']
     steps:
-      - name: Checkout
+      - name: Checkout Action
         uses: actions/checkout@v3.3.0
         with:
             ref: dev
+      - name: Xcodebuild Action
+        uses: sersoft-gmbh/xcodebuild-action@v2.0.1
+        with:
+          project: PayPay\ Demo.xcodeproj
+          scheme: PayPay\ Demo
+          destination: ${destination}
+          action: test
+
 
 #      - name: Unit Test
 #        run: |
@@ -29,8 +37,8 @@ jobs:
 #        env:
 #          destination: ${{ matrix.destination }}
 
-      - name: Build
-        run: |
-          xcodebuild clean build -project PayPay\ Demo.xcodeproj -scheme PayPay\ Demo -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+#      - name: Build
+#        run: |
+#          xcodebuild clean build -project PayPay\ Demo.xcodeproj -scheme PayPay\ Demo -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env: 
           destination: ${{ matrix.destination }}
