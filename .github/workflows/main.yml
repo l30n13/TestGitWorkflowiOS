@@ -10,7 +10,7 @@ jobs:
         destination: ['platform=iOS Simulator,OS=16.3.1,name=iPhone 14 Pro Max']
     steps:
       - name: Checkout
-        uses: actions/dev
+        uses: actions/checkout@dev
       - name: Unit Test
         run: |
           xcodebuild clean test -project PayPay\ Demo.xcodeproj -scheme PayPay\ DemoTests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
