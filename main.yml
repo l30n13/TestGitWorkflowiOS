@@ -9,8 +9,8 @@ jobs:
   build:
     runs-on: macos-latest
     strategy:
-        matrix:
-          destination: ['platform=iOS Simulator,OS=16.3.1,name=iPhone 14 Pro Max']
+      matrix:
+        destination: ['platform=iOS Simulator,OS=16.3.1,name=iPhone 14 Pro Max']
     steps:
       - name: Checkout
         uses: actions/dev
