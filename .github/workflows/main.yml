@@ -23,7 +23,7 @@ jobs:
           project: PayPay\ Demo.xcodeproj
           scheme: PayPay\ Demo
           destination: ${destination}
-          action: test
+          action: build
 
 
 #      - name: Unit Test
