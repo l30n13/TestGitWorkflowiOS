@@ -3,7 +3,7 @@ name: Currenncy Converter iOS Application
 on:
     push:
          branches: [ main, dev ]
-    pull-request:
+    pull_request:
         branches: [ main ]
   
 jobs:
