@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3539E2F3288B0C13009AA81F /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539E2F2288B0C13009AA81F /* LocalStorageManager.swift */; };
+		3539E2F6288B11C5009AA81F /* RequestManagerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539E2F5288B11C5009AA81F /* RequestManagerEnums.swift */; };
+		3551C2EC288C13710068BC90 /* CurrencyValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551C2EB288C13710068BC90 /* CurrencyValueTableViewCell.swift */; };
+		3551C2F1288C3D180068BC90 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3551C2F0288C3D180068BC90 /* IQKeyboardManagerSwift */; };
+		3551C2F3288C64FC0068BC90 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551C2F2288C64FC0068BC90 /* NetworkManagerTests.swift */; };
+		3551C2F5288C65820068BC90 /* CurrencyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551C2F4288C65820068BC90 /* CurrencyViewModelTests.swift */; };
+		357353AB288E84120037B3E4 /* CurrencyListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357353AA288E84120037B3E4 /* CurrencyListViewModelProtocol.swift */; };
+		357353AE288E86F70037B3E4 /* CurrencyRateListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357353AD288E86F70037B3E4 /* CurrencyRateListViewModelProtocol.swift */; };
+		357353B3288E913F0037B3E4 /* CurrencyListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357353B2288E913F0037B3E4 /* CurrencyListViewModelTests.swift */; };
+		35868E922888362400ED08DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868E912888362400ED08DA /* AppDelegate.swift */; };
+		35868E9B2888362500ED08DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35868E9A2888362500ED08DA /* Assets.xcassets */; };
+		35868E9E2888362500ED08DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35868E9C2888362500ED08DA /* LaunchScreen.storyboard */; };
+		35868EB32888362500ED08DA /* PayPay_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EB22888362500ED08DA /* PayPay_DemoUITests.swift */; };
+		35868EB52888362600ED08DA /* PayPay_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EB42888362600ED08DA /* PayPay_DemoUITestsLaunchTests.swift */; };
+		35868EC62888382000ED08DA /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EC52888382000ED08DA /* CurrencyViewModel.swift */; };
+		35868EC828894C5B00ED08DA /* CurrencyConverterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EC728894C5B00ED08DA /* CurrencyConverterVC.swift */; };
+		35868ED028894FF700ED08DA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 35868ECF28894FF700ED08DA /* Alamofire */; };
+		35868ED32889561E00ED08DA /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868ED22889561E00ED08DA /* NotificationName+Extension.swift */; };
+		35868ED528895A1E00ED08DA /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868ED428895A1E00ED08DA /* RequestManager.swift */; };
+		35868ED828895A5200ED08DA /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868ED728895A5200ED08DA /* LogHelper.swift */; };
+		35868EDA288968FE00ED08DA /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868ED9288968FE00ED08DA /* ApiEndpoints.swift */; };
+		35868EDD288969DC00ED08DA /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 35868EDC288969DC00ED08DA /* NotificationBannerSwift */; };
+		35868EDF28896B0B00ED08DA /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EDE28896B0B00ED08DA /* ReachabilityManager.swift */; };
+		35868EEE288978AD00ED08DA /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35868EE5288978A300ED08DA /* DropDownCell.xib */; };
+		35868EEF288978B200ED08DA /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EE8288978A300ED08DA /* DPDConstants.swift */; };
+		35868EF0288978B200ED08DA /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EE9288978A300ED08DA /* DPDUIView+Extension.swift */; };
+		35868EF1288978B200ED08DA /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EE7288978A300ED08DA /* DPDKeyboardListener.swift */; };
+		35868EF2288978B700ED08DA /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EED288978A300ED08DA /* DropDown+Appearance.swift */; };
+		35868EF3288978B700ED08DA /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EEC288978A300ED08DA /* DropDownCell.swift */; };
+		35868EF4288978B700ED08DA /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868EEB288978A300ED08DA /* DropDown.swift */; };
+		35EF2B8D288F2748002E593E /* MockCurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF2B8C288F2748002E593E /* MockCurrencyListViewModel.swift */; };
+		35F3A4C8288D3B6600738CD5 /* CurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3A4C7288D3B6600738CD5 /* CurrencyListViewModel.swift */; };
+		35F3A4CA288D3C3300738CD5 /* CurrencyRateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3A4C9288D3C3200738CD5 /* CurrencyRateListViewModel.swift */; };
+		35F420A9288FCF69000BD96B /* MockCurrencyRateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F420A8288FCF69000BD96B /* MockCurrencyRateListViewModel.swift */; };
+		35F420AB288FCF84000BD96B /* CurrencyRateListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F420AA288FCF84000BD96B /* CurrencyRateListViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35868EA52888362500ED08DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35868E862888362400ED08DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35868E8D2888362400ED08DA;
+			remoteInfo = "PayPay Demo";
+		};
+		35868EAF2888362500ED08DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35868E862888362400ED08DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35868E8D2888362400ED08DA;
+			remoteInfo = "PayPay Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3539E2F2288B0C13009AA81F /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		3539E2F5288B11C5009AA81F /* RequestManagerEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerEnums.swift; sourceTree = "<group>"; };
+		3551C2EB288C13710068BC90 /* CurrencyValueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyValueTableViewCell.swift; sourceTree = "<group>"; };
+		3551C2F2288C64FC0068BC90 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		3551C2F4288C65820068BC90 /* CurrencyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModelTests.swift; sourceTree = "<group>"; };
+		357353AA288E84120037B3E4 /* CurrencyListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModelProtocol.swift; sourceTree = "<group>"; };
+		357353AD288E86F70037B3E4 /* CurrencyRateListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateListViewModelProtocol.swift; sourceTree = "<group>"; };
+		357353B2288E913F0037B3E4 /* CurrencyListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModelTests.swift; sourceTree = "<group>"; };
+		35868E8E2888362400ED08DA /* PayPay Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PayPay Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35868E912888362400ED08DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35868E9A2888362500ED08DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35868E9D2888362500ED08DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35868E9F2888362500ED08DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35868EA42888362500ED08DA /* PayPay DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PayPay DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35868EAE2888362500ED08DA /* PayPay DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PayPay DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35868EB22888362500ED08DA /* PayPay_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPay_DemoUITests.swift; sourceTree = "<group>"; };
+		35868EB42888362600ED08DA /* PayPay_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPay_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35868EC52888382000ED08DA /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		35868EC728894C5B00ED08DA /* CurrencyConverterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterVC.swift; sourceTree = "<group>"; };
+		35868ED22889561E00ED08DA /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
+		35868ED428895A1E00ED08DA /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		35868ED728895A5200ED08DA /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
+		35868ED9288968FE00ED08DA /* ApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
+		35868EDE28896B0B00ED08DA /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		35868EE3288978A300ED08DA /* DropDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropDown.h; sourceTree = "<group>"; };
+		35868EE5288978A300ED08DA /* DropDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		35868EE7288978A300ED08DA /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		35868EE8288978A300ED08DA /* DPDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
+		35868EE9288978A300ED08DA /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		35868EEB288978A300ED08DA /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		35868EEC288978A300ED08DA /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		35868EED288978A300ED08DA /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		35EF2B8C288F2748002E593E /* MockCurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyListViewModel.swift; sourceTree = "<group>"; };
+		35F3A4C7288D3B6600738CD5 /* CurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModel.swift; sourceTree = "<group>"; };
+		35F3A4C9288D3C3200738CD5 /* CurrencyRateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateListViewModel.swift; sourceTree = "<group>"; };
+		35F420A8288FCF69000BD96B /* MockCurrencyRateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyRateListViewModel.swift; sourceTree = "<group>"; };
+		35F420AA288FCF84000BD96B /* CurrencyRateListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateListViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35868E8B2888362400ED08DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35868ED028894FF700ED08DA /* Alamofire in Frameworks */,
+				35868EDD288969DC00ED08DA /* NotificationBannerSwift in Frameworks */,
+				3551C2F1288C3D180068BC90 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35868EA12888362500ED08DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35868EAB2888362500ED08DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3539E2F0288B0B72009AA81F /* NetworkData */ = {
+			isa = PBXGroup;
+			children = (
+				35868EDE28896B0B00ED08DA /* ReachabilityManager.swift */,
+				35868ED428895A1E00ED08DA /* RequestManager.swift */,
+				3539E2F5288B11C5009AA81F /* RequestManagerEnums.swift */,
+				35868ED9288968FE00ED08DA /* ApiEndpoints.swift */,
+			);
+			path = NetworkData;
+			sourceTree = "<group>";
+		};
+		3539E2F1288B0B7E009AA81F /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				3539E2F2288B0C13009AA81F /* LocalStorageManager.swift */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
+		357353AC288E86DC0037B3E4 /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				357353AA288E84120037B3E4 /* CurrencyListViewModelProtocol.swift */,
+				35F3A4C7288D3B6600738CD5 /* CurrencyListViewModel.swift */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		357353AF288E885C0037B3E4 /* CurrencyRateList */ = {
+			isa = PBXGroup;
+			children = (
+				357353AD288E86F70037B3E4 /* CurrencyRateListViewModelProtocol.swift */,
+				35F3A4C9288D3C3200738CD5 /* CurrencyRateListViewModel.swift */,
+			);
+			path = CurrencyRateList;
+			sourceTree = "<group>";
+		};
+		35868E852888362400ED08DA = {
+			isa = PBXGroup;
+			children = (
+				35868E902888362400ED08DA /* PayPay Demo */,
+				35868EA72888362500ED08DA /* PayPay DemoTests */,
+				35868EB12888362500ED08DA /* PayPay DemoUITests */,
+				35868E8F2888362400ED08DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35868E8F2888362400ED08DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35868E8E2888362400ED08DA /* PayPay Demo.app */,
+				35868EA42888362500ED08DA /* PayPay DemoTests.xctest */,
+				35868EAE2888362500ED08DA /* PayPay DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35868E902888362400ED08DA /* PayPay Demo */ = {
+			isa = PBXGroup;
+			children = (
+				35868ED628895A4600ED08DA /* Helper */,
+				35868ED12889560700ED08DA /* Extensions */,
+				35868ECB28894F7500ED08DA /* DataManager */,
+				35868EC928894C6000ED08DA /* Views */,
+				35868EC42888380600ED08DA /* ViewModels */,
+				35868E912888362400ED08DA /* AppDelegate.swift */,
+				35868E9A2888362500ED08DA /* Assets.xcassets */,
+				35868E9C2888362500ED08DA /* LaunchScreen.storyboard */,
+				35868E9F2888362500ED08DA /* Info.plist */,
+			);
+			path = "PayPay Demo";
+			sourceTree = "<group>";
+		};
+		35868EA72888362500ED08DA /* PayPay DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				35EF2B8B288F2728002E593E /* MockViewModels */,
+				3551C2F2288C64FC0068BC90 /* NetworkManagerTests.swift */,
+				3551C2F4288C65820068BC90 /* CurrencyViewModelTests.swift */,
+			);
+			path = "PayPay DemoTests";
+			sourceTree = "<group>";
+		};
+		35868EB12888362500ED08DA /* PayPay DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35868EB22888362500ED08DA /* PayPay_DemoUITests.swift */,
+				35868EB42888362600ED08DA /* PayPay_DemoUITestsLaunchTests.swift */,
+			);
+			path = "PayPay DemoUITests";
+			sourceTree = "<group>";
+		};
+		35868EC42888380600ED08DA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				35868EC52888382000ED08DA /* CurrencyViewModel.swift */,
+				357353AC288E86DC0037B3E4 /* CurrencyList */,
+				357353AF288E885C0037B3E4 /* CurrencyRateList */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		35868EC928894C6000ED08DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35868EC728894C5B00ED08DA /* CurrencyConverterVC.swift */,
+				3551C2EB288C13710068BC90 /* CurrencyValueTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35868ECB28894F7500ED08DA /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3539E2F1288B0B7E009AA81F /* LocalData */,
+				3539E2F0288B0B72009AA81F /* NetworkData */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		35868ED12889560700ED08DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35868ED22889561E00ED08DA /* NotificationName+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35868ED628895A4600ED08DA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				35868EE12889789B00ED08DA /* Libs */,
+				35868ED728895A5200ED08DA /* LogHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		35868EE12889789B00ED08DA /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				35868EE2288978A300ED08DA /* DropDown */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		35868EE2288978A300ED08DA /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				35868EE4288978A300ED08DA /* resources */,
+				35868EE6288978A300ED08DA /* helpers */,
+				35868EEA288978A300ED08DA /* src */,
+				35868EE3288978A300ED08DA /* DropDown.h */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		35868EE4288978A300ED08DA /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				35868EE5288978A300ED08DA /* DropDownCell.xib */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		35868EE6288978A300ED08DA /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				35868EE7288978A300ED08DA /* DPDKeyboardListener.swift */,
+				35868EE8288978A300ED08DA /* DPDConstants.swift */,
+				35868EE9288978A300ED08DA /* DPDUIView+Extension.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		35868EEA288978A300ED08DA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				35868EEB288978A300ED08DA /* DropDown.swift */,
+				35868EEC288978A300ED08DA /* DropDownCell.swift */,
+				35868EED288978A300ED08DA /* DropDown+Appearance.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		35EF2B8B288F2728002E593E /* MockViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				35F420A6288FCF38000BD96B /* CurrencyList */,
+				35F420A7288FCF44000BD96B /* CurrencyRateList */,
+			);
+			path = MockViewModels;
+			sourceTree = "<group>";
+		};
+		35F420A6288FCF38000BD96B /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				35EF2B8C288F2748002E593E /* MockCurrencyListViewModel.swift */,
+				357353B2288E913F0037B3E4 /* CurrencyListViewModelTests.swift */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		35F420A7288FCF44000BD96B /* CurrencyRateList */ = {
+			isa = PBXGroup;
+			children = (
+				35F420A8288FCF69000BD96B /* MockCurrencyRateListViewModel.swift */,
+				35F420AA288FCF84000BD96B /* CurrencyRateListViewModelTests.swift */,
+			);
+			path = CurrencyRateList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35868E8D2888362400ED08DA /* PayPay Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35868EB82888362600ED08DA /* Build configuration list for PBXNativeTarget "PayPay Demo" */;
+			buildPhases = (
+				35868E8A2888362400ED08DA /* Sources */,
+				35868E8B2888362400ED08DA /* Frameworks */,
+				35868E8C2888362400ED08DA /* Resources */,
+				35868EE028896B5F00ED08DA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PayPay Demo";
+			packageProductDependencies = (
+				35868ECF28894FF700ED08DA /* Alamofire */,
+				35868EDC288969DC00ED08DA /* NotificationBannerSwift */,
+				3551C2F0288C3D180068BC90 /* IQKeyboardManagerSwift */,
+			);
+			productName = "PayPay Demo";
+			productReference = 35868E8E2888362400ED08DA /* PayPay Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35868EA32888362500ED08DA /* PayPay DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35868EBB2888362600ED08DA /* Build configuration list for PBXNativeTarget "PayPay DemoTests" */;
+			buildPhases = (
+				35868EA02888362500ED08DA /* Sources */,
+				35868EA12888362500ED08DA /* Frameworks */,
+				35868EA22888362500ED08DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35868EA62888362500ED08DA /* PBXTargetDependency */,
+			);
+			name = "PayPay DemoTests";
+			productName = "PayPay DemoTests";
+			productReference = 35868EA42888362500ED08DA /* PayPay DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35868EAD2888362500ED08DA /* PayPay DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35868EBE2888362600ED08DA /* Build configuration list for PBXNativeTarget "PayPay DemoUITests" */;
+			buildPhases = (
+				35868EAA2888362500ED08DA /* Sources */,
+				35868EAB2888362500ED08DA /* Frameworks */,
+				35868EAC2888362500ED08DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35868EB02888362500ED08DA /* PBXTargetDependency */,
+			);
+			name = "PayPay DemoUITests";
+			productName = "PayPay DemoUITests";
+			productReference = 35868EAE2888362500ED08DA /* PayPay DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35868E862888362400ED08DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					35868E8D2888362400ED08DA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					35868EA32888362500ED08DA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 35868E8D2888362400ED08DA;
+					};
+					35868EAD2888362500ED08DA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 35868E8D2888362400ED08DA;
+					};
+				};
+			};
+			buildConfigurationList = 35868E892888362400ED08DA /* Build configuration list for PBXProject "PayPay Demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35868E852888362400ED08DA;
+			packageReferences = (
+				35868ECE28894FF700ED08DA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				35868EDB288969DC00ED08DA /* XCRemoteSwiftPackageReference "NotificationBanner" */,
+				3551C2EF288C3D180068BC90 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 35868E8F2888362400ED08DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35868E8D2888362400ED08DA /* PayPay Demo */,
+				35868EA32888362500ED08DA /* PayPay DemoTests */,
+				35868EAD2888362500ED08DA /* PayPay DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35868E8C2888362400ED08DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35868EEE288978AD00ED08DA /* DropDownCell.xib in Resources */,
+				35868E9E2888362500ED08DA /* LaunchScreen.storyboard in Resources */,
+				35868E9B2888362500ED08DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35868EA22888362500ED08DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35868EAC2888362500ED08DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35868EE028896B5F00ED08DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint > /dev/null; then\n  swiftlint --fix\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35868E8A2888362400ED08DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3551C2EC288C13710068BC90 /* CurrencyValueTableViewCell.swift in Sources */,
+				35868EDF28896B0B00ED08DA /* ReachabilityManager.swift in Sources */,
+				35868EC828894C5B00ED08DA /* CurrencyConverterVC.swift in Sources */,
+				35868EC62888382000ED08DA /* CurrencyViewModel.swift in Sources */,
+				35868EF2288978B700ED08DA /* DropDown+Appearance.swift in Sources */,
+				3539E2F6288B11C5009AA81F /* RequestManagerEnums.swift in Sources */,
+				35868EF1288978B200ED08DA /* DPDKeyboardListener.swift in Sources */,
+				35F3A4C8288D3B6600738CD5 /* CurrencyListViewModel.swift in Sources */,
+				35F3A4CA288D3C3300738CD5 /* CurrencyRateListViewModel.swift in Sources */,
+				35868EF4288978B700ED08DA /* DropDown.swift in Sources */,
+				35868ED32889561E00ED08DA /* NotificationName+Extension.swift in Sources */,
+				357353AB288E84120037B3E4 /* CurrencyListViewModelProtocol.swift in Sources */,
+				35868EF0288978B200ED08DA /* DPDUIView+Extension.swift in Sources */,
+				35868EDA288968FE00ED08DA /* ApiEndpoints.swift in Sources */,
+				35868ED828895A5200ED08DA /* LogHelper.swift in Sources */,
+				35868ED528895A1E00ED08DA /* RequestManager.swift in Sources */,
+				35868EF3288978B700ED08DA /* DropDownCell.swift in Sources */,
+				35868E922888362400ED08DA /* AppDelegate.swift in Sources */,
+				35868EEF288978B200ED08DA /* DPDConstants.swift in Sources */,
+				357353AE288E86F70037B3E4 /* CurrencyRateListViewModelProtocol.swift in Sources */,
+				3539E2F3288B0C13009AA81F /* LocalStorageManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35868EA02888362500ED08DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F420A9288FCF69000BD96B /* MockCurrencyRateListViewModel.swift in Sources */,
+				357353B3288E913F0037B3E4 /* CurrencyListViewModelTests.swift in Sources */,
+				3551C2F3288C64FC0068BC90 /* NetworkManagerTests.swift in Sources */,
+				35F420AB288FCF84000BD96B /* CurrencyRateListViewModelTests.swift in Sources */,
+				3551C2F5288C65820068BC90 /* CurrencyViewModelTests.swift in Sources */,
+				35EF2B8D288F2748002E593E /* MockCurrencyListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35868EAA2888362500ED08DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35868EB32888362500ED08DA /* PayPay_DemoUITests.swift in Sources */,
+				35868EB52888362600ED08DA /* PayPay_DemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35868EA62888362500ED08DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35868E8D2888362400ED08DA /* PayPay Demo */;
+			targetProxy = 35868EA52888362500ED08DA /* PBXContainerItemProxy */;
+		};
+		35868EB02888362500ED08DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35868E8D2888362400ED08DA /* PayPay Demo */;
+			targetProxy = 35868EAF2888362500ED08DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35868E9C2888362500ED08DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35868E9D2888362500ED08DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35868EB62888362600ED08DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35868EB72888362600ED08DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35868EB92888362600ED08DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2P4X5Y727;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PayPay Demo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Currency Converter";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahbubur-Rashid.PayPay-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		35868EBA2888362600ED08DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2P4X5Y727;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PayPay Demo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Currency Converter";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahbubur-Rashid.PayPay-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		35868EBC2888362600ED08DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2P4X5Y727;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahbubur-Rashid.PayPay-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayPay Demo.app/PayPay Demo";
+			};
+			name = Debug;
+		};
+		35868EBD2888362600ED08DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2P4X5Y727;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahbubur-Rashid.PayPay-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayPay Demo.app/PayPay Demo";
+			};
+			name = Release;
+		};
+		35868EBF2888362600ED08DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2P4X5Y727;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahbubur-Rashid.PayPay-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PayPay Demo";
+			};
+			name = Debug;
+		};
+		35868EC02888362600ED08DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2P4X5Y727;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahbubur-Rashid.PayPay-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PayPay Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35868E892888362400ED08DA /* Build configuration list for PBXProject "PayPay Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35868EB62888362600ED08DA /* Debug */,
+				35868EB72888362600ED08DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35868EB82888362600ED08DA /* Build configuration list for PBXNativeTarget "PayPay Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35868EB92888362600ED08DA /* Debug */,
+				35868EBA2888362600ED08DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35868EBB2888362600ED08DA /* Build configuration list for PBXNativeTarget "PayPay DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35868EBC2888362600ED08DA /* Debug */,
+				35868EBD2888362600ED08DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35868EBE2888362600ED08DA /* Build configuration list for PBXNativeTarget "PayPay DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35868EBF2888362600ED08DA /* Debug */,
+				35868EC02888362600ED08DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3551C2EF288C3D180068BC90 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		35868ECE28894FF700ED08DA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		35868EDB288969DC00ED08DA /* XCRemoteSwiftPackageReference "NotificationBanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Daltron/NotificationBanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3551C2F0288C3D180068BC90 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3551C2EF288C3D180068BC90 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		35868ECF28894FF700ED08DA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35868ECE28894FF700ED08DA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		35868EDC288969DC00ED08DA /* NotificationBannerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35868EDB288969DC00ED08DA /* XCRemoteSwiftPackageReference "NotificationBanner" */;
+			productName = NotificationBannerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 35868E862888362400ED08DA /* Project object */;
+}
