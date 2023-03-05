@@ -1,0 +1,32 @@
+name: Swift
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: macos-latest
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,OS=16.3.1,name=iPhone 14 Pro Max']
+    steps:
+      - name: Checkout
+        uses: actions/dev
+      - name: Unit Test
+        run: |
+          xcodebuild clean test -project PayPay\ Demo.xcodeproj -scheme PayPay\ DemoTests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env:
+          destination: ${{ matrix.destination }}
+      - name: UI Test
+        run: |
+          xcodebuild clean test -project PayPay\ Demo.xcodeproj -scheme PayPay\ DemoUITests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env:
+          destination: ${{ matrix.destination }}
+
+      - name: Build
+        run: |
+          xcodebuild clean build -project PayPay\ Demo.xcodeproj -scheme PayPay\ Demo -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env: 
+          destination: ${{ matrix.destination }}
